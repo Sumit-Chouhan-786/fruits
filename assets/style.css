@@ -1,11 +1,11 @@
         :root {
-            --primary-green: #27ae60;
-            --secondary-green: #2ecc71;
-            --dark-green: #219653;
+            --primary-green: #1790c6;
+            --secondary-green: #1790c6;
+            --dark-green: #055479ff;
             --light-green: #d5f4e6;
-            --accent-orange: #f39c12;
-            --accent-yellow: #f1c40f;
-            --dark-text: #2c3e50;
+            --accent-orange: #181717ff;
+            --accent-yellow: #181717ff;
+            --dark-text: #053361ff;
             --light-text: #7f8c8d;
             --white: #ffffff;
             --section-gray: #f8f9fa;
@@ -153,7 +153,7 @@
         .navbar {
             background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
+            padding: 14px 0;
             transition: all 0.4s ease;
             backdrop-filter: blur(10px);
         }
@@ -201,16 +201,12 @@
             background-color: rgba(255, 255, 255, 0.98);
         }
 
-        .navbar-brand {
-            font-weight: 800;
-            font-size: 2rem;
-            color: var(--primary-green) !important;
-            font-family: 'Montserrat', sans-serif;
+        .navbar-brand img{
+          height: auto;
+          max-width: 80px;
         }
 
-        .navbar-brand span {
-            color: var(--accent-orange);
-        }
+
 
         .nav-link {
             font-weight: 500;
@@ -251,6 +247,7 @@
 
         /* Hero Section */
         .hero-section {
+            overflow: hidden !important;
             background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)), url('./images/bg_1.webp') no-repeat center center/cover;
             background-size: cover;
             background-position: center;
@@ -337,7 +334,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--accent-yellow);
+            color: var(--light-green);
             margin-bottom: 5px;
             font-family: 'Montserrat', sans-serif;
         }
@@ -628,12 +625,14 @@
 
         /* Enhanced Contact Section */
         .contact-section {
-            background-color: var(--white);
+            background-image:url("./images/fruits.jpg") ;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             position: relative;
         }
 
         .contact-wrapper {
-            background: white;
+            backdrop-filter: blur(10px);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
@@ -873,17 +872,13 @@
             background: linear-gradient(to right, var(--primary-green), var(--accent-orange));
         }
 
-        .footer-logo {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: white;
+        .footer-logo img{
+            height: auto;
+          max-width: 80px;
             margin-bottom: 20px;
-            font-family: 'Montserrat', sans-serif;
         }
 
-        .footer-logo span {
-            color: var(--secondary-green);
-        }
+
 
         .social-icons a i{
             color: white;
@@ -901,16 +896,16 @@
             text-decoration: none;
             justify-content: center;
             align-items: center;
-            background-color: #219653;
+            background-color: var(--accent-orange);
             height: 50px;
             transition: all 0.3s linear;
             width: 50px;
         }
         .social-icons a:hover {
-            background-color: var(--accent-orange);
+            background-color: var(--dark-text);
         }
         .social-icons a:hover i{
-            background-color: var(--accent-orange);
+            background-color: var(--dark-text);
         }
 
         .footer-about p {
@@ -1038,7 +1033,7 @@
         .counter {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--dark-green);
+            color: var(--primary-green);
         }
 
         /* Responsive Styles */
