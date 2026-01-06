@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
@@ -68,7 +69,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section position-relative">
-        <div class="hero_img d-none d-lg-block">
+        <div data-aos="fade-left" class="hero_img d-none d-lg-block">
             <img  src="./assets/images/hero.png" alt="hero image" class="w-100">
         </div>
         <div class="infinite-animation"></div>
@@ -77,7 +78,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <div class="hero-content">
+                    <div data-aos="fade-right" class="hero-content">
                         <h1 class="hero-title">WE ARE EXPORTERS OF FRESH VEGETABLES </h1>
                         <p class="hero-subtitle">Premium quality farm-fresh produce delivered worldwide. With fast shipping, guaranteed freshness, and 24/7 customer support, we connect farms to tables across the globe.</p>
                         <div class="hero-buttons">
@@ -111,16 +112,16 @@
     <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
-            <h2 class="section-title">About Fresh Harvest</h2>
-            <p class="section-subtitle">With over 15 years of experience in agricultural exports, we've built a reputation for reliability, quality, and exceptional customer service in the global fresh produce market.</p>
+            <h2 data-aos="fade-down" class="section-title">About Fresh Harvest</h2>
+            <p data-aos="fade-up" class="section-subtitle">With over 15 years of experience in agricultural exports, we've built a reputation for reliability, quality, and exceptional customer service in the global fresh produce market.</p>
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div data-aos="fade-right" class="col-lg-6 mb-5 mb-lg-0">
                     <div class="position-relative">
-                        <img src="./assets/images/about.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+                        <img src="./assets/images/about.jpg" alt="About Us" class="img-fluid rounded">
                         <div class="position-absolute top-0 start-0 w-100 h-100 border border-4 border-white rounded" style="transform: translate(20px, 20px); z-index: -1;"></div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div data-aos="fade-left" class="col-lg-6">
                     <h3 class="mb-4">Connecting Farms to Global Markets</h3>
                     <p class="mb-4">At Fresh Harvest Exports, we specialize in sourcing the finest fruits and vegetables from trusted local farmers and delivering them to customers worldwide. Our commitment to quality begins at the farm and continues through every step of the supply chain.</p>
                     <div class="row">
@@ -177,15 +178,15 @@
     <!-- Products Section -->
     <section id="products" class="products-section section-padding">
         <div class="container">
-            <h2 class="section-title">Our Premium Products</h2>
-            <p class="section-subtitle">From farm-fresh vegetables to exotic fruits, we offer a wide variety of premium produce that meets the highest quality standards.</p>
+            <h2 data-aos="fade-down" class="section-title">Our Premium Products</h2>
+            <p data-aos="fade-up" class="section-subtitle">From farm-fresh vegetables to exotic fruits, we offer a wide variety of premium produce that meets the highest quality standards.</p>
             
             <div class="product-filter">
-                <button class="filter-btn active" data-filter="all">All Products</button>
-                <button class="filter-btn" data-filter="vegetables">Vegetables</button>
-                <button class="filter-btn" data-filter="fruits">Fruits</button>
-                <button class="filter-btn" data-filter="exotic">Exotic</button>
-                <button class="filter-btn" data-filter="organic">Organic</button>
+                <button data-aos="fade-right" data-aos-delay="100" class="filter-btn active" data-filter="all">All Products</button>
+                <button data-aos="fade-right" data-aos-delay="200" class="filter-btn" data-filter="vegetables">Vegetables</button>
+                <button data-aos="fade-right" data-aos-delay="300" class="filter-btn" data-filter="fruits">Fruits</button>
+                <button data-aos="fade-right" data-aos-delay="400" class="filter-btn" data-filter="exotic">Exotic</button>
+                <button data-aos="fade-right" data-aos-delay="500" class="filter-btn" data-filter="organic">Organic</button>
             </div>
             
             <div class="row" id="product-container">
@@ -201,8 +202,8 @@
     <!-- Features Section -->
     <section id="features" class="features-section section-padding">
         <div class="container">
-            <h2 class="section-title">Why Choose Fresh Harvest</h2>
-            <p class="section-subtitle">We go beyond just exporting produce. Our comprehensive services ensure you get the best quality with maximum convenience.</p>
+            <h2 data-aos="fade-down" class="section-title">Why Choose Fresh Harvest</h2>
+            <p data-aos="fade-up" class="section-subtitle">We go beyond just exporting produce. Our comprehensive services ensure you get the best quality with maximum convenience.</p>
             
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -267,19 +268,19 @@
   <div class="container text-center">
     <h5 class="section-subtitle mb-4">Trusted By</h5>
     <div class="d-flex flex-wrap justify-content-center gap-4">
-      <div class="badge-item">
+      <div data-aos="flip-left" data-aos-delay="100" class="badge-item">
         <div class="badge-icon"><i class="fas fa-utensils"></i></div>
         <p class="badge-text">500+ Restaurants</p>
       </div>
-      <div class="badge-item">
+      <div data-aos="flip-left" data-aos-delay="300" class="badge-item">
         <div class="badge-icon"><i class="fas fa-store"></i></div>
         <p class="badge-text">300+ Retailers</p>
       </div>
-      <div class="badge-item">
+      <div data-aos="flip-left" data-aos-delay="500" class="badge-item">
         <div class="badge-icon"><i class="fas fa-hotel"></i></div>
         <p class="badge-text">200+ Hotels</p>
       </div>
-      <div class="badge-item">
+      <div data-aos="flip-left" data-aos-delay="700" class="badge-item">
         <div class="badge-icon"><i class="fas fa-ship"></i></div>
         <p class="badge-text">50+ Countries</p>
       </div>
@@ -289,12 +290,12 @@
  <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have questions about our products or services? Contact us today for a personalized quote or consultation.</p>
+            <h2 data-aos="fade-down" class="section-title">Get In Touch</h2>
+            <p data-aos="fade-up" class="section-subtitle">Have questions about our products or services? Contact us today for a personalized quote or consultation.</p>
             
             <div class="contact-wrapper">
                 <div class="row g-0">
-                    <div class="col-lg-5">
+                    <div data-aos="fade-right" data-aos-delay="500" class="col-lg-5">
                         <div class="contact-info">
                             <h3>Contact Information</h3>
                             <p>Reach out to us through any of the channels below. We're here to help with your fresh produce needs.</p>
@@ -349,7 +350,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div data-aos="fade-left" data-aos-delay="500" class="col-lg-7">
                         <div class="contact-form">
                             <h3 class="mb-4">Send Us a Message</h3>
                             <form id="contactForm">
@@ -417,17 +418,16 @@
     <section id="testimonials" class="testimonials-section section-padding">
         <div class="infinite-animation"></div>
         <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <p class="section-subtitle">Hear from our satisfied clients across the globe who trust us for their fresh produce needs.</p>
+            <h2 data-aos="fade-down" class="section-title">What Our Clients Say</h2>
+            <p data-aos="fade-up" class="section-subtitle">Hear from our satisfied clients across the globe who trust us for their fresh produce needs.</p>
             
-            <div class="testimonial-slider">
+            <div class="testimonial-slider d-flex justify-content-center">
                 <div class="testimonial-slide">
-                    <p class="testimonial-text">"Fresh Harvest has been our primary supplier for over 5 years. The consistency in quality and reliability of delivery is exceptional. Their broccoli and carrots always arrive fresh, even to our remote location."</p>
-                    <div class="testimonial-author">
+                    <div class="testimonial-author d-flex flex-column align-items-center">
                         <div class="author-avatar">
                             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mr. Gomez">
                         </div>
-                        <div class="author-info">
+                        <div class="author-info d-flex flex-column align-items-center">
                             <h5>Mr. Gomez</h5>
                             <p>Restaurant Chain Owner, Mexico</p>
                             <div class="rating">
@@ -439,35 +439,17 @@
                             </div>
                         </div>
                     </div>
+                    <p class="testimonial-text text-center mt-2 mb-0">"Fresh Harvest has been our primary supplier for over 5 years. The consistency in quality and reliability of delivery is exceptional. Their broccoli and carrots always arrive fresh, even to our remote location."</p>
+
                 </div>
                 <div class="testimonial-slide">
-                    <p class="testimonial-text">"As an international importer, I've worked with many suppliers, but Fresh Harvest stands out. Their attention to packaging for long-haul shipments and adherence to phytosanitary standards is impressive."</p>
-                    <div class="testimonial-author">
+                    <div class="testimonial-author d-flex flex-column align-items-center">
                         <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mr. Gomez">
                         </div>
-                        <div class="author-info">
-                            <h5>Sarah Johnson</h5>
-                            <p>Import Manager, USA</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <p class="testimonial-text">"The fast shipping truly lives up to its name. Our supermarket chain relies on Fresh Harvest for seasonal fruits that always arrive at perfect ripeness. Their 24/7 support is incredibly responsive."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Chen">
-                        </div>
-                        <div class="author-info">
-                            <h5>David Chen</h5>
-                            <p>Procurement Director, Singapore</p>
+                        <div class="author-info d-flex flex-column align-items-center">
+                            <h5>Mr. Gomez</h5>
+                            <p>Restaurant Chain Owner, Mexico</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -477,16 +459,17 @@
                             </div>
                         </div>
                     </div>
+                    <p class="testimonial-text text-center mt-2 mb-0">"Fresh Harvest has been our primary supplier for over 5 years. The consistency in quality and reliability of delivery is exceptional. Their broccoli and carrots always arrive fresh, even to our remote location."</p>
+
                 </div>
                 <div class="testimonial-slide">
-                    <p class="testimonial-text">"We've expanded our exotic fruit offerings thanks to Fresh Harvest's diverse product range. Their mangoes and dragon fruits are customer favorites that consistently sell out quickly."</p>
-                    <div class="testimonial-author">
+                    <div class="testimonial-author d-flex flex-column align-items-center">
                         <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria Rodriguez">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mr. Gomez">
                         </div>
-                        <div class="author-info">
-                            <h5>Maria Rodriguez</h5>
-                            <p>Grocery Store Owner, Spain</p>
+                        <div class="author-info d-flex flex-column align-items-center">
+                            <h5>Mr. Gomez</h5>
+                            <p>Restaurant Chain Owner, Mexico</p>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -496,29 +479,49 @@
                             </div>
                         </div>
                     </div>
+                    <p class="testimonial-text text-center mt-2 mb-0">"Fresh Harvest has been our primary supplier for over 5 years. The consistency in quality and reliability of delivery is exceptional. Their broccoli and carrots always arrive fresh, even to our remote location."</p>
+
                 </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-author d-flex flex-column align-items-center">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mr. Gomez">
+                        </div>
+                        <div class="author-info d-flex flex-column align-items-center">
+                            <h5>Mr. Gomez</h5>
+                            <p>Restaurant Chain Owner, Mexico</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text text-center mt-2 mb-0">"Fresh Harvest has been our primary supplier for over 5 years. The consistency in quality and reliability of delivery is exceptional. Their broccoli and carrots always arrive fresh, even to our remote location."</p>
+
+                </div>
+             
+            
             </div>
         </div>
     </section>
-
-
-
-
    
 <!-- blog section -->
 <section id="blogs" class="blogs-section section-padding">
   <div class="container">
     <div class="row align-items-center">
       <!-- Left Column: Heading + Description -->
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <h2 class="section-title text-start">Our Blog</h2>
-        <p class="section-subtitle text-start">
+      <div data-aos="fade-right" data-aos-delay="500"  class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <h2 data-aos="fade-down" data-aos-delay="500" class="section-title text-lg-start">Our Latest Blog</h2>
+        <p data-aos="fade-up" class="section-subtitle text-lg-start mb-0">
           Discover fresh insights, tips, and information about fruits and vegetables.
         </p>
       </div>
 
       <!-- Right Column: Blog Slider -->
-      <div class="col-lg-8 col-md-12">
+      <div data-aos="fade-left" class="col-lg-8 col-md-12">
         <div class="blog-slider">
           <!-- Blog Card 1 -->
           <div class="blog-card h-100">
@@ -579,15 +582,15 @@
     <!-- Faq Section  -->
 <section id="faqs" class="faqs-section section-padding">
     <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-subtitle">Find answers to common questions about MSPL Yoga Certification and YCB.</p>
+        <h2 data-aos="fade-down" class="section-title">Frequently Asked Questions</h2>
+        <p data-aos="fade-up" class="section-subtitle">Find answers to common questions about MSPL Yoga Certification and YCB.</p>
         
         <div class="faq-container">
             <!-- FAQ Item 1 (Open by default) -->
-            <div class="faq-item active">
+            <div data-aos="fade-right" class="faq-item active">
                 <button class="faq-question">
                     <span>What is MSPL Yoga Certification?</span>
-                    <i class="fas fa-minus"></i>
+                    <i  class="fas fa-minus"></i>
                 </button>
                 <div class="faq-answer" style="display: block;">
                     <p>MSPL Yoga Certification is a professional certification program that validates the skills and knowledge of yoga practitioners. It ensures that certified individuals meet industry standards for teaching and practicing yoga safely and effectively.</p>
@@ -595,7 +598,7 @@
             </div>
             
             <!-- FAQ Item 2 (Closed by default) -->
-            <div class="faq-item">
+            <div data-aos="fade-left" class="faq-item">
                 <button class="faq-question">
                     <span>What is YCB and why is it important?</span>
                     <i class="fas fa-plus"></i>
@@ -606,7 +609,7 @@
             </div>
             
             <!-- FAQ Item 3 (Closed by default) -->
-            <div class="faq-item">
+            <div data-aos="fade-right" class="faq-item">
                 <button class="faq-question">
                     <span>Who can apply for the MSPL Yoga Certification exam?</span>
                     <i class="fas fa-plus"></i>
@@ -617,7 +620,7 @@
             </div>
             
             <!-- FAQ Item 4 (Closed by default) -->
-            <div class="faq-item">
+            <div data-aos="fade-left" class="faq-item">
                 <button class="faq-question">
                     <span>How do I register for the YCB Yoga exam through MSPL?</span>
                     <i class="fas fa-plus"></i>
@@ -630,8 +633,6 @@
         
     </div>
 </section>
-
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -692,6 +693,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
@@ -704,6 +706,13 @@
      <!-- Add this in your HTML head -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="./assets/index.js"></script>
+   <script>
+  AOS.init({
+    duration: 1000, 
+    easing: 'ease-in-out', 
+    once: true 
+  });
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');

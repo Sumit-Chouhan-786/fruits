@@ -72,25 +72,38 @@
             generateProductCards('all');
             
             // Initialize Slick slider for testimonials
-            $('.testimonial-slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
+         $('.testimonial-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,          // show center + sides
+    slidesToScroll: 1,
+    centerMode: true,          // enable center mode
+    centerPadding: '40px',     // space on sides of center slide
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    pauseOnHover: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                centerPadding: '30px',
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 6000,
-                arrows: false,
-                pauseOnHover: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            dots: true
-                        }
-                    }
-                ]
-            });
+                centerMode: false,
+            }
+        }
+    ]
+});
+
             
             // Filter products
             $('.filter-btn').on('click', function() {
@@ -248,6 +261,7 @@
     responsive: [
       {
         breakpoint: 992, 
+
         settings: {
           slidesToShow: 1
         }
