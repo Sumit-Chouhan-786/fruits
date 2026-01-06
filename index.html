@@ -503,6 +503,132 @@
         </div>
     </section>
 
+
+    <!-- Faq Section  -->
+<section id="faqs" class="faqs-section section-padding">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about MSPL Yoga Certification and YCB.</p>
+        
+        <div class="faq-container">
+            <!-- FAQ Item 1 (Open by default) -->
+            <div class="faq-item active">
+                <button class="faq-question">
+                    <span>What is MSPL Yoga Certification?</span>
+                    <i class="fas fa-minus"></i>
+                </button>
+                <div class="faq-answer" style="display: block;">
+                    <p>MSPL Yoga Certification is a professional certification program that validates the skills and knowledge of yoga practitioners. It ensures that certified individuals meet industry standards for teaching and practicing yoga safely and effectively.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 2 (Closed by default) -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is YCB and why is it important?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>YCB (Yoga Certification Board) is the governing body that sets standards for yoga education and certification. It's important because it ensures uniformity, quality, and recognition of yoga certifications both nationally and internationally.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 3 (Closed by default) -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Who can apply for the MSPL Yoga Certification exam?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Anyone who has completed the required yoga training hours from a recognized institute can apply for the MSPL Yoga Certification exam. This includes yoga teachers, practitioners, and fitness professionals seeking formal certification.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 4 (Closed by default) -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I register for the YCB Yoga exam through MSPL?</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You can register for the YCB Yoga exam through MSPL by visiting our official website, filling out the registration form, submitting the required documents, and paying the examination fee online through our secure payment gateway.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- blog section -->
+<section id="blogs" class="blogs-section section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Column: Heading + Description -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <h2 class="section-title text-start">Our Blog</h2>
+        <p class="section-subtitle text-start">
+          Discover fresh insights, tips, and information about fruits and vegetables.
+        </p>
+      </div>
+
+      <!-- Right Column: Blog Slider -->
+      <div class="col-lg-8 col-md-12">
+        <div class="blog-slider">
+          <!-- Blog Card 1 -->
+          <div class="blog-card h-100">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80" alt="Fresh Vegetables">
+              <span class="blog-category">Vegetables</span>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Benefits of Eating Fresh Green Vegetables</h3>
+              <p class="blog-excerpt">Green vegetables are rich in vitamins and minerals that support immunity, digestion, and overall health.</p>
+            </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="blog-card h-100">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=500&q=80" alt="Organic Produce">
+              <span class="blog-category">Organic</span>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Organic vs Non-Organic Produce</h3>
+                            <p class="blog-excerpt">Green vegetables are rich in vitamins and minerals that support immunity, digestion, and overall health.</p>
+
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="blog-card h-100">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=500&q=80" alt="Storage Tips">
+              <span class="blog-category">Tips</span>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">How to Store Fruits and Vegetables Properly</h3>
+                           <p class="blog-excerpt">Green vegetables are rich in vitamins and minerals that support immunity, digestion, and overall health.</p>
+
+            </div>
+          </div>
+
+          <!-- Blog Card 4 -->
+          <div class="blog-card h-100">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=500&q=80" alt="Healthy Diet">
+              <span class="blog-category">Health</span>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">Fruits and Vegetables for a Balanced Diet</h3>
+                            <p class="blog-excerpt">Green vegetables are rich in vitamins and minerals that support immunity, digestion, and overall health.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -572,7 +698,46 @@
     <!-- Waypoints for scroll animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- Counter Up for stats -->
+     <!-- Add this in your HTML head -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="./assets/index.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    const otherIcon = otherItem.querySelector('.faq-question i');
+                    otherAnswer.style.display = 'none';
+                    otherIcon.classList.remove('fa-minus');
+                    otherIcon.classList.add('fa-plus');
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-question i');
+            
+            if (item.classList.contains('active')) {
+                answer.style.display = 'block';
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                answer.style.display = 'none';
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

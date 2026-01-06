@@ -235,3 +235,24 @@
       bsCollapse.hide();
     });
   });
+
+  $(document).ready(function(){
+  $('.blog-slider').slick({
+    slidesToShow: 2,   
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    speed: 600,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 992, 
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
