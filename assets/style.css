@@ -334,7 +334,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--light-green);
+            color: var(--white);
             margin-bottom: 5px;
             font-family: 'Montserrat', sans-serif;
         }
@@ -405,6 +405,14 @@
             transform: translateY(-5px);
             border: 2px solid white;
 
+        }
+
+        .hero_img{
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            width: 600px;
+            z-index: 2;
         }
 
         /* Section Common */
