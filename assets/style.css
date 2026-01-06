@@ -20,7 +20,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             color: var(--dark-text);
-            overflow-x: hidden;
+            overflow-x: hidden !important;
             background-color: #f9f9f9;
         }
 
@@ -159,9 +159,9 @@
         }
 
     .navbar-toggler {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
+  border: none ;
+  box-shadow: none;
+  outline: none ;
 }
 
 .navbar-toggler:focus {
@@ -450,7 +450,6 @@
             background: var(--primary-green);
             color: white;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
         }
 
         .product-card {
@@ -634,6 +633,10 @@
     .testimonial-slider .slick-next {
         display: none !important;
     }
+     .product-filter {
+           
+            margin-bottom: 20px;
+        }
 }
 
 
