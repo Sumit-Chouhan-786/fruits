@@ -71,7 +71,7 @@
 
         /* Navbar Styles */
         .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: var(--dark-text);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             padding: 14px 0;
             transition: all 0.4s ease;
@@ -131,14 +131,14 @@
         .nav-link {
             font-weight: 500;
             margin: 0 10px;
-            color: var(--dark-text) !important;
+            color: var(--white) !important;
             transition: all 0.3s;
             position: relative;
             font-size: 1.05rem;
         }
 
         .nav-link:hover {
-            color: var(--primary-green) !important;
+            color: var(--white) !important;
         }
 
         .nav-link::after {
@@ -146,7 +146,7 @@
             position: absolute;
             width: 0;
             height: 3px;
-            background: linear-gradient(to right, var(--primary-green), var(--accent-orange));
+            background: linear-gradient(to right, var(--white), var(--accent-orange));
             bottom: 0;
             left: 0;
             transition: width 0.4s;
@@ -158,7 +158,7 @@
         }
 
         .nav-link.active {
-            color: var(--primary-green) !important;
+            color: var(--white) !important;
         }
 
         .nav-link.active::after {
@@ -191,7 +191,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7));
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9));
   z-index: 1;
 }
 
@@ -215,16 +215,28 @@
             z-index: 2;
         }
 
-        .hero-title {
-            font-size: 4rem;
-            font-weight: 800;
-            margin-bottom: 25px;
-            line-height: 1.2;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transform: translateY(40px);
-            animation: fadeUp 1s forwards 0.5s;
-        }
+      .hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-align: start;
+
+    /* Background image text effect */
+    background: url("./images/bg_1.webp")
+        center / cover no-repeat;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s forwards 0.5s;
+}
+
 
         .hero-subtitle {
             font-size: 1.3rem;
