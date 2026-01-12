@@ -278,38 +278,5 @@
       easing: 'ease-in-out',
       once: true
     });
-
-    // FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-
-      question.addEventListener('click', () => {
-        faqItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
-            otherItem.querySelector('.faq-answer').style.display = 'none';
-            const otherIcon = otherItem.querySelector('.faq-question i');
-            otherIcon.classList.remove('fa-minus');
-            otherIcon.classList.add('fa-plus');
-          }
-        });
-
-        const answer = item.querySelector('.faq-answer');
-        const icon = item.querySelector('.faq-question i');
-
-        item.classList.toggle('active');
-
-        if (item.classList.contains('active')) {
-          answer.style.display = 'block';
-          icon.classList.replace('fa-plus', 'fa-minus');
-        } else {
-          answer.style.display = 'none';
-          icon.classList.replace('fa-minus', 'fa-plus');
-        }
-      });
-    });
-
   });
 
